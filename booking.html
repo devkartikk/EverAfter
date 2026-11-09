@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking - EverAfter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>EverAfter Events</h1>
+    <p>Making Your Special Moments Memorable</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="planner.html">Planner</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="container">
+    <h2>Book Your Event</h2>
+    <p>Fill in the details to plan your celebration.</p>
+
+    <form id="bookingForm">
+
+        <label>Your Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" id="phone" pattern="[0-9]{10}" required>
+
+        <label>Event Type:</label>
+        <select id="eventType" required>
+            <option value="">Select Event</option>
+            <option>Wedding</option>
+            <option>Birthday</option>
+            <option>Anniversary</option>
+            <option>Corporate Event</option>
+        </select>
+
+        <label>Event Date:</label>
+        <input type="date" id="date" required>
+
+        <label>Number of Guests:</label>
+        <input type="number" id="guests" min="1" required>
+
+        <label>Message:</label>
+        <textarea id="message" rows="4"></textarea>
+
+        <button type="submit">Submit Booking</button>
+
+    </form>
+
+    <p id="bookingResult"></p>
+</section>
+
+<footer>
+    <p>© 2026 EverAfter Events | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

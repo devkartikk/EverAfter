@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery - EverAfter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>EverAfter Events</h1>
+    <p>Making Your Special Moments Memorable</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="planner.html">Planner</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="container">
+    <h2>Our Gallery</h2>
+    <p>Explore some beautiful event memories.</p>
+
+    <div class="filters">
+        <button class="filter-btn" onclick="filterGallery('all')">All</button>
+        <button class="filter-btn" onclick="filterGallery('wedding')">Wedding</button>
+        <button class="filter-btn" onclick="filterGallery('birthday')">Birthday</button>
+        <button class="filter-btn" onclick="filterGallery('party')">Party</button>
+    </div>
+
+    <div class="gallery">
+
+        <img class="gallery-item wedding"
+        src="https://images.unsplash.com/photo-1519741497674-611481863552?w=500"
+        alt="Wedding">
+
+       <img class="gallery-item birthday"
+       src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=700" 
+       alt="Birthday">
+        
+
+        <img class="gallery-item wedding"
+        src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=500"
+        alt="Wedding decoration">
+
+        <img class="gallery-item party"
+        src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?w=500"
+        alt="Party decoration">
+
+        <img class="gallery-item birthday"
+        src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500"
+        alt="Birthday cake">
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 EverAfter Events | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
