@@ -2,7 +2,7 @@
 
 function updateCountdown() {
 
-    let eventDate = new Date("December 20, 2026 00:00:00").getTime();
+    let eventDate = new Date("January 01, 2027 00:00:00").getTime();
 
     let today = new Date().getTime();
 
