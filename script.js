@@ -1,44 +1,4 @@
 
-
-function updateCountdown() {
-
-    let eventDate = new Date("January 01, 2027 00:00:00").getTime();
-
-    let today = new Date().getTime();
-
-    let difference = eventDate - today;
-
-    let countdown = document.getElementById("countdown");
-
-    if (countdown == null) {
-        return;
-    }
-
-    if (difference <= 0) {
-        countdown.innerHTML = "The Celebration Has Arrived!";
-        return;
-    }
-
-    let days = Math.floor(difference / (1000 * 60 * 60 * 24));
-
-    let hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-
-    let minutes = Math.floor((difference / (1000 * 60)) % 60);
-
-    let seconds = Math.floor((difference / 1000) % 60);
-
-    countdown.innerHTML =
-        days + " Days : " +
-        hours + " Hours : " +
-        minutes + " Minutes : " +
-        seconds + " Seconds";
-}
-
-updateCountdown();
-
-setInterval(updateCountdown, 1000);
-
-
 function filterGallery(category) {
 
     let images = document.getElementsByClassName("gallery-item");
