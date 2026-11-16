@@ -38,56 +38,7 @@ function calculateBudget() {
     document.getElementById("total").innerHTML =
         "Total Budget: ₹" + total;
 }
-
-
-
-let guests = JSON.parse(localStorage.getItem("guests")) || [];
-
-function displayGuests() {
-
-    let list = document.getElementById("guestList");
-
-    let count = document.getElementById("guestCount");
-
-    if (list == null || count == null) {
-        return;
-    }
-
-    list.innerHTML = "";
-
-    count.innerHTML = guests.length;
-
-    for (let i = 0; i < guests.length; i++) {
-
-        let li = document.createElement("li");
-
-        li.innerHTML = guests[i];
-
-        list.appendChild(li);
-    }
 }
-
-function addGuest() {
-
-    let input = document.getElementById("guestName");
-
-    let name = input.value.trim();
-
-    if (name == "") {
-        alert("Please enter guest name!");
-        return;
-    }
-
-    guests.push(name);
-
-    localStorage.setItem("guests", JSON.stringify(guests));
-
-    input.value = "";
-
-    displayGuests();
-}
-
-displayGuests();
 
 
 let bookingForm = document.getElementById("bookingForm");
